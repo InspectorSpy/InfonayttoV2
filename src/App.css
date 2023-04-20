@@ -1,0 +1,280 @@
+.App {
+background-color: transparent;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 0s linear;
+  }
+}
+
+.Header {
+  background-color: #000000;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ensimmäisen kerroksen pohjakuva */
+.ekaKrs {
+  width: 650px;
+  height:650px;
+  display: "flex";
+}
+
+/* Toisen kerroksen pohjakuva */
+.tokaKrs {
+  width: 600px;
+  height: 600px;
+  display: "flex";
+  margin-left: 50px;
+}
+
+/*Ensimmäisen kerroksen pohjakuva jota käytetty modaleissa*/
+.ekaKrsModal {
+  width: 800px;
+  height: 800px;
+  margin-left: 10px;
+}
+
+/*Toisen kerroksen pohjakuva jota käytetty modaleissa*/
+.tokaKrsModal {
+  width: 600px;
+  height: 600px;
+  margin-left: 10px;
+}
+
+.tokaKrsModal1 {
+  width: 800px;
+  height: 800px;
+  margin-left: 10px;
+}
+
+.Napit {
+  margin-top: 2%;
+  text-align: center;
+  margin: 3px;
+}
+
+.Pohjat {
+  margin-top: 2%;
+  height: 600px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.EkakrsPohja {
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+}
+
+.TokakrsPohja {
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+}
+
+.ModalNappi {
+  margin: 3px;
+}
+
+.Modal1 {
+  width: auto;
+}
+
+.modaali-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modaali {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.modaali-close {
+  margin-left: auto;
+  display: block;
+  padding: 5px 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -30px;
+}
+
+.modaali-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modalHeader {
+  display: flexbox;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.eksote {
+  margin-left: 105px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.ylakoulu {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.vuoropaivakoti {
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.keittio {
+  width: 1040px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.kotitalous {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.kasityotjakuvataide {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.musiikkinayttamo {
+  width: 1000px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.liikuntasalit {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.pukuhuoneet {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.nuortenpalvelut {
+  width: 1000px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.lukio {
+  height: 900px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.hallinto {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.paivakoti {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.alaesialku {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.luonnontieteet {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  height: 900px;
+}
+
+.vahtimestari {
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.digiklinikka {
+  height: 800px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.jopo1krs {
+  height: 700px;
+  width: 700px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.jopo2krs {
+  height: 750px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.line {
+  position: absolute;
+}
