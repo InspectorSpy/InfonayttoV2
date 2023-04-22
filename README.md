@@ -7,13 +7,17 @@ $ sudo apt install nodejs
 Tarkista että nodejs ja npm asentui:
 
 $ node -v
+
 $ npm -v
 
 Asenna ReactJS ja tarvittavat bootstrap moduulit:
 
 $ sudo npm install -g create-react-app
+
 $ sudo npm install bootstrap
+
 $ sudo npm install react-bootstrap
+
 $ sudo npm install react-bootstrap-button
 
 npm komentoja tarvittaessa:
