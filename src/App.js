@@ -6,7 +6,9 @@ import Header from './assets/Header.js';
 import EkakrsPohja from './assets/EkakrsPohja.js'
 import TokakrsPohja from './assets/TokakrsPohja.js';
 import Modaali from './assets/Modaali.js';
-import Nappi from "react-bootstrap/button";
+/* BootstrapButton oli aiemmin haettu nimellä Nappi Modaali.js tiedostosta.
+React ei kuitenkaan tätä tunnistanut bootsrapin nappina. */
+import { BootstrapButton } from "react-bootstrap-button";
 import InfoIcon from "./assets/images/infoIcon.png";
 import DigiIcon from "./assets/images/DigiKlinikka.png";
 import ImageWithLines from './assets/ImageWithLines.js';
@@ -385,312 +387,313 @@ function App() {
 
     // Imatran kaupungin oranssi väri: rgb(237, 108, 65)
     // Imatran kaupungin ruskea väri: rgb(91, 44, 63)
+    // Nämä värikoodit otettu suoraan Imatran kaupungin 2021 graafisesta ohjeesta
 
     return (
         <div className="App">
             <Header className="Header"></Header>
 
             <div className="Napit">
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(91, 44, 63)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Etelä-Karjalan Hyvinvointialue</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[0]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/EksotenAlue.png"
+                                imageSrc="./images/EksotenAlue.webp"
                                 lines={lineArray[1]}
                                 className="eksote"
                             />
                         </div>
                     )}>
                     1. Etelä-Karjalan Hyvinvointialue
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(91, 44, 63)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Yläkoulu</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[2]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/YläkoulunAlue.png"
+                                imageSrc="./images/YläkoulunAlue.webp"
                                 lines={lineArray[3]}
                                 className="ylakoulu"
                             />
                         </div>
                     )}>
                     2. Yläkoulu
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(91, 44, 63)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Vuoropäiväkoti</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[4]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/VuoropäiväkodinAlue.png"
+                                imageSrc="./images/VuoropäiväkodinAlue.webp"
                                 lines={lineArray[5]}
                                 className="vuoropaivakoti"
                             />
                         </div>
                     )}>
                     3. Vuoropäiväkoti
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(91, 44, 63)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Keittiö</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[6]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/KeittiönAlue.png"
+                                imageSrc="./images/KeittiönAlue.webp"
                                 lines={lineArray[7]}
                                 className="keittio"
                             />
                         </div>
                     )}>
                     4. Keittiö
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(91, 44, 63)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Kotitalous</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[8]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/KotitaloudenAlue.png"
+                                imageSrc="./images/KotitaloudenAlue.webp"
                                 lines={lineArray[9]}
                                 className="kotitalous"
                             />
                         </div>
                     )}>
                     5. Kotitalous
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Käsityöt ja kuvataide</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[10]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/KäsitöidenjakuvataiteenAlue.png"
+                                imageSrc="./images/KäsitöidenjaKuvataiteenAlue.webp"
                                 lines={lineArray[11]}
                                 className="kasityotjakuvataide"
                             />
                         </div>
                     )}>
                     6. Käsityöt ja kuvataide
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Musiikki luokat ja näyttämö</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[12]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/MusiikkijaNäyttämöAlue.png"
+                                imageSrc="./images/MusiikkijaNäyttämöAlue.webp"
                                 lines={lineArray[13]}
                                 className="musiikkinayttamo"
                             />
                         </div>
                     )}>
                     7. Musiikki luokat ja näyttämö
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Liikuntasalit</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[14]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/LiikuntasalienAlue.png"
+                                imageSrc="./images/LiikuntasalienAlue.webp"
                                 lines={lineArray[15]}
                                 className="liikuntasalit"
                             />
                         </div>
                     )}>
                     8. Liikuntasalit
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Pukuhuoneet</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[16]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/PukuhuoneidenAlue.png"
+                                imageSrc="./images/PukuhuoneidenAlue.webp"
                                 lines={lineArray[17]}
                                 className="pukuhuoneet"
                             />
                         </div>
                     )}>
                     9. Pukuhuoneet
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Nuortenpalvelut</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[18]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/NuortenAlue.png"
+                                imageSrc="./images/NuortenAlue.webp"
                                 lines={lineArray[19]}
                                 className="nuortenpalvelut"
                             />
                         </div>
                     )}>
                     10. Nuortenpalvelut
-                </Nappi>
+                </BootstrapButton>
                 <br></br>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Joustava Perusopetus</h1>
                             <ImageWithLines
-                                imageSrc="./images/Jopo1krsAlue.png"
+                                imageSrc="./images/Jopo1krsAlue.webp"
                                 lines={lineArray[20]}
                                 className="jopo1krs"
                             />
                             <ImageWithLines
-                                imageSrc="./images/Jopo2krsAlue.png"
+                                imageSrc="./images/Jopo2krsAlue.webp"
                                 lines={lineArray[21]}
                                 className="jopo2krs"
                             />
                         </div>
                     )}>
                     11. Joustava Perusopetus
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Lukio</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja2Krs_väri.png"
+                                imageSrc="./images/Pohja2krs.webp"
                                 lines={lineArray[22]}
                                 className="tokaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/LukionAlue.png"
+                                imageSrc="./images/LukionAlue.webp"
                                 lines={lineArray[23]}
                                 className="lukio"
                             />
                         </div>
                     )}>
                     12. Lukio
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div style={{ textAlign: "center" }}>
                             <h1 className="modalHeader">Hallinto ja opettajanhuone</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja2Krs_väri.png"
+                                imageSrc="./images/Pohja2krs.webp"
                                 lines={lineArray[24]}
                                 className="tokaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/HallinnonAlue.png"
+                                imageSrc="./images/HallinnonAlue.webp"
                                 lines={lineArray[25]}
                                 className="hallinto"
                             />
                         </div>
                     )}>
                     13. Hallinto ja opettajanhuone
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Päiväkoti</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja2Krs_väri.png"
+                                imageSrc="./images/Pohja2krs.webp"
                                 lines={lineArray[26]}
                                 className="tokaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/PäiväkodinAlueZoom.png"
+                                imageSrc="./images/PäiväkodinAlueZoom.webp"
                                 lines={lineArray[27]}
                                 className="paivakoti"
                             />
                         </div>
                     )}>
                     14. Päiväkoti
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent"}}
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent"}}
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Alakoulu, Esi- ja Alkuopetus</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja2Krs_väri.png"
+                                imageSrc="./images/Pohja2krs.webp"
                                 lines={lineArray[28]}
                                 className="tokaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/AlaEsiAlkuAlue.png"
+                                imageSrc="./images/AlaEsiAlkuAlue.webp"
                                 lines={lineArray[29]}
                                 className="alaesialku"
                             />
                         </div>
                     )}>
                     15. Alakoulu, Esi- ja Alkuopetus
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Luonnontieteet</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja2Krs_väri.png"
+                                imageSrc="./images/Pohja2krs.webp"
                                 lines={lineArray[30]}
                                 className="tokaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/LuonnontieteidenAlue.png"
+                                imageSrc="./images/LuonnontieteidenAlue.webp"
                                 lines={lineArray[31]}
                                 className="luonnontieteet"
                             />
                         </div>
                     )}>
                     16. Luonnontieteet
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Vahtimestari</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[32]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/VahtimestarinAlue.png"
+                                imageSrc="./images/VahtimestarinAlue.webp"
                                 lines={lineArray[33]}
                                 className="vahtimestari"
                             />
@@ -706,18 +709,18 @@ function App() {
                         src={InfoIcon}>
                     </img>
                     Vahtimestari
-                </Nappi>
-                <Nappi style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                </BootstrapButton>
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Digiklinikka</h1>
                             <ImageWithLines
-                                imageSrc="./images/Pohja1Krs_väri.png"
+                                imageSrc="./images/Pohja1krs.webp"
                                 lines={lineArray[34]}
                                 className="ekaKrsModal"
                             />
                             <ImageWithLines
-                                imageSrc="./images/DigiKlinikanAlue.png"
+                                imageSrc="./images/DigiKlinikanAlue.webp"
                                 lines={lineArray[35]}
                                 className="digiklinikka"
                             />
@@ -733,7 +736,7 @@ function App() {
                         src={DigiIcon}>
                     </img>
                     Digiklinikka
-                </Nappi>
+                </BootstrapButton>
             </div>
             <Modaali isOpen={isOpen} onClose={handleClose}>
                 {modalContent}
