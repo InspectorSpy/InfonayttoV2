@@ -35,15 +35,15 @@ background-color: transparent;
 
 /* Ensimmäisen kerroksen pohjakuva */
 .ekaKrs {
-  width: 650px;
-  height:650px;
+  width: 700px;
+  height: 700px;
   display: "flex";
 }
 
 /* Toisen kerroksen pohjakuva */
 .tokaKrs {
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
   display: "flex";
   margin-left: 50px;
 }
@@ -62,12 +62,6 @@ background-color: transparent;
   margin-left: 10px;
 }
 
-.tokaKrsModal1 {
-  width: 800px;
-  height: 800px;
-  margin-left: 10px;
-}
-
 .Napit {
   margin-top: 2%;
   text-align: center;
@@ -82,13 +76,11 @@ background-color: transparent;
 }
 
 .EkakrsPohja {
-  background-color: transparent;
   display: inline-block;
   text-align: center;
 }
 
 .TokakrsPohja {
-  background-color: transparent;
   display: inline-block;
   text-align: center;
 }
