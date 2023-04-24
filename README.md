@@ -26,7 +26,7 @@ npm komentoja tarvittaessa:
 # npm start
 
 Ajaa sovelluksen kehittäjä tilassa.\
-Avaa [http://localhost:3000] selaimessa nähdäksesi sovelluksen.
+Avaa [http://localhost:3000](http://localhost:3000) selaimessa nähdäksesi sovelluksen.
 
 Sivu latautuu uudelleen kun päivität ja tallennat koodin.\
 Voit myös mähdä lint virhekoodit konsolissa.
@@ -34,7 +34,7 @@ Voit myös mähdä lint virhekoodit konsolissa.
 # npm test
 
 Ajaa sovelluksen interaktiivisessa testaustilassa.\
-katso kohta [running tests](https://facebook.github.io/create-react-app/docs/running-tests) lisätiedoista.
+katso kohta [testiajot](https://facebook.github.io/create-react-app/docs/running-tests) lisätiedoista.
 
 # npm run build
 
