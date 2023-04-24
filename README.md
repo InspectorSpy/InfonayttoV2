@@ -20,6 +20,7 @@ $ sudo npm install react-bootstrap
 
 $ sudo npm install react-bootstrap-button
 
+
 npm komentoja tarvittaessa:
 
 # npm start
