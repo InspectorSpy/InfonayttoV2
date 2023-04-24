@@ -6,7 +6,7 @@ import Header from './assets/Header.js';
 import EkakrsPohja from './assets/EkakrsPohja.js'
 import TokakrsPohja from './assets/TokakrsPohja.js';
 import Modaali from './assets/Modaali.js';
-/* BootstrapButton oli aiemmin haettu nimellä Nappi Modaali.js tiedostosta.
+/* BootstrapButton oli aiemmin haettu nimellä Nappi, Modaali.js tiedostosta.
 React ei kuitenkaan tätä tunnistanut bootsrapin nappina. */
 import { BootstrapButton } from "react-bootstrap-button";
 import InfoIcon from "./assets/images/infoIcon.png";
@@ -15,18 +15,22 @@ import ImageWithLines from './assets/ImageWithLines.js';
 
 function App() {
 
+    // Luodaan modalin toiminnot jotta modali aukeaa ja sen sisältö latautuu.
     const [isOpen, setIsOpen] = useState(false);
     const [modalContent, setModalContent] = useState("");
 
+    // handleButtonClick funktio lataa modalin sisällön kun modali avataan.
     function handleButtonClick(content) {
         setModalContent(content);
         setIsOpen(true);
     }
 
+    // Tämä funktio sulkee modalin kun Sulje nappia painetaan.
     function handleClose() {
         setIsOpen(false);
     }
 
+    // Tähän arrayhin on luotu kuvien päällä näkyvät viivat, ne menevvät 0 eteenpäin numerojärjestyksessä.
     const lineArray = [
         [
             // 0. Viivat etelä-karjalan hyvinvointialueelle, 1krs pohjapiirrustukseen.
@@ -393,6 +397,11 @@ function App() {
         <div className="App">
             <Header className="Header"></Header>
 
+            {/* className Napit sisältää sivulla nähtävissä olevat napit, jotka avaavat modalin joka sisältää kyseisen alueen kuvat.
+                Lisäksi jokainen nappi sisältää style={{}} tyylit johon on annettu margin, backgroundColor ja borderColor. variant tulee bootstrapilta, tekee napeista "päänapin".
+                Napin sisällä on div joka sisältää Headerin ja kaksi ImageWithLines modulia joista ylempi on pohjapiirrustus ja alempi on zoomattu kuva.
+                Lisäksi näillä kaikilla on järjestyksessä lines={lineArray[ ]}, jotka hakevat viivat kuvan päälle.
+                Nämä siis samassa järjestyksessä 0 eteenpäin kuin ylempänä lineArrayssä annettu.*/}
             <div className="Napit">
                 <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
                     onClick={() => handleButtonClick(
@@ -647,7 +656,7 @@ function App() {
                     )}>
                     14. Päiväkoti
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent"}}
+                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }}
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Alakoulu, Esi- ja Alkuopetus</h1>
@@ -699,6 +708,8 @@ function App() {
                             />
                         </div>
                     )}>
+                    {/* Vahtimestarin ja Digiklinikan napit sisältää kukin logon, ne on lisätty <img> luokalla.
+                        Näille on annettu tähän suoraan tyylit jotta ovat oikean kokoiset.*/}
                     <img style={{
                         marginBottom: "2px",
                         marginRight: "5px",
@@ -726,6 +737,8 @@ function App() {
                             />
                         </div>
                     )}>
+                    {/* Vahtimestarin ja Digiklinikan napit sisältää kukin logon, ne on lisätty <img> luokalla.
+                        Näille on annettu tähän suoraan tyylit jotta ovat oikean kokoiset.*/}
                     <img style={{
                         marginBottom: "2px",
                         marginRight: "5px",
@@ -738,9 +751,13 @@ function App() {
                     Digiklinikka
                 </BootstrapButton>
             </div>
+
+            {/* Tämä hoitaa modalin sulkemisen kun painat nappia Sulje. */}
             <Modaali isOpen={isOpen} onClose={handleClose}>
                 {modalContent}
             </Modaali>
+
+            {/* Tämä div tuo pohjapiirrustukset nappien alle näkyviin. */}
             <div className="Pohjat">
                 <EkakrsPohja />
                 <TokakrsPohja />

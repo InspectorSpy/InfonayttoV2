@@ -1,3 +1,7 @@
+import { React } from "react";
+
+// Tämä luo infonäytössä käytettyjen modalien toiminnot, eli aukeaminen, sulkeminen ja sisältö
+
 function Modaali({ isOpen, onClose, children }) {
   if (!isOpen) return null;
 

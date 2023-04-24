@@ -1,5 +1,7 @@
 import { React } from 'react';
 
+// Tämä luo infonäytössä kuvien päälle luotujen viivojen toiminnot. Eli kuva itse, viivat ja luokan nimi.
+
 const ImageWithLines = ({ imageSrc, lines, className }) => {
 
   return (
