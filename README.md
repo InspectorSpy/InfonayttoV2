@@ -2,19 +2,19 @@ Tämä on Mansikkalan koulun Infonäytön ohjelmarakenne ja koodi.
 
 Tarvitset nämä jos pyörität linux ympäristössä:
 
- $ sudo apt install nodejs
+$ sudo apt install nodejs
 
 Tarkista että nodejs ja npm asentui:
 
- $ node -v
- $ npm -v
+$ node -v
+$ npm -v
 
 Asenna ReactJS ja tarvittavat bootstrap moduulit:
 
- $ sudo npm install -g create-react-app
- $ sudo npm install bootstrap
- $ sudo npm install react-bootstrap
- $ sudo npm install react-bootstrap-button
+$ sudo npm install -g create-react-app
+$ sudo npm install bootstrap
+$ sudo npm install react-bootstrap
+$ sudo npm install react-bootstrap-button
 
 npm komentoja tarvittaessa:
 
