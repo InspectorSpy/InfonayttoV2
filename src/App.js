@@ -30,7 +30,7 @@ function App() {
         setIsOpen(false);
     }
 
-    // Tähän arrayhin on luotu kuvien päällä näkyvät viivat, ne menevvät 0 eteenpäin numerojärjestyksessä.
+    // Tähän arrayhin on luotu kuvien päällä näkyvät viivat, ne menevät 0 eteenpäin numerojärjestyksessä.
     const lineArray = [
         [
             // 0. Viivat etelä-karjalan hyvinvointialueelle, 1krs pohjapiirrustukseen.
