@@ -42,4 +42,6 @@ Rakentaa julkaistavan sovelluksen build kansioon.\
 Se kasaa koodin oikein julkaisu tilassa ja optimoi sovelluksen parhaalle suorituskyvylle.
 
 Sovellus minimoidaan ja tiedostonimet liitetään tiivisteinä.
+Muista että tätä käytetään kun tiedostot ovat serverillä, esim vscodessa tämä ei toimi.
+
 Sovellus on valmiina käyttöönotettavaksi!
