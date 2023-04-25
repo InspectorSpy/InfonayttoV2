@@ -29,11 +29,11 @@ Ajaa sovelluksen kehittäjä tilassa.\
 Avaa [http://localhost:3000](http://localhost:3000) selaimessa nähdäksesi sovelluksen.
 
 Sivu latautuu uudelleen kun päivität ja tallennat koodin.\
-Voit myös mähdä lint virhekoodit konsolissa.
+Voit myös nähdä lint virhekoodit konsolissa.
 
 # npm test
 
-Ajaa sovelluksen interaktiivisessa testaustilassa.\
+Ajaa sovelluksen interaktiivisessa testitilassa.\
 katso kohta [testiajot](https://facebook.github.io/create-react-app/docs/running-tests) lisätiedoista.
 
 # npm run build
