@@ -2,7 +2,7 @@ import { React } from "react";
 
 // Tämä luo infonäytössä käytettyjen modalien toiminnot, eli aukeaminen, sulkeminen ja sisältö
 
-function Modaali({ isOpen, onClose, children }) {
+function Modali({ isOpen, onClose, children }) {
   if (!isOpen) return null;
 
   return (
@@ -17,4 +17,4 @@ function Modaali({ isOpen, onClose, children }) {
   );
 }
 
-export default Modaali;
+export default Modali;
