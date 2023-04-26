@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './assets/Header.js';
 import EkakrsPohja from './assets/EkakrsPohja.js'
 import TokakrsPohja from './assets/TokakrsPohja.js';
-import Modaali from './assets/Modaali.js';
-/* BootstrapButton oli aiemmin haettu nimellä Nappi, Modaali.js tiedostosta.
+import Modali from './assets/Modali.js';
+/* BootstrapButton oli aiemmin haettu nimellä Nappi, Modali.js tiedostosta.
 React ei kuitenkaan tätä tunnistanut bootsrapin nappina. */
 import { BootstrapButton } from "react-bootstrap-button";
 import InfoIcon from "./assets/images/infoIcon.png";
@@ -33,7 +33,7 @@ function App() {
     // Tähän arrayhin on luotu kuvien päällä näkyvät viivat, ne menevät 0 eteenpäin numerojärjestyksessä.
     const lineArray = [
         [
-            // 0. Viivat etelä-karjalan hyvinvointialueelle, 1krs pohjapiirrustukseen.
+            // 0. Viivat etelä-karjalan hyvinvointialueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "72.4%", top: "39.3%", width: "4px", height: "2.4%", backgroundColor: "red" },
             { left: "72.4%", top: "39%", width: "5%", height: "4px", backgroundColor: "red" },
@@ -52,7 +52,7 @@ function App() {
             { left: "50.7%", top: "66%", width: "10px", height: "18%", backgroundColor: "red" }
         ],
         [
-            // 2. Viivat yläkoulun alueelle, 1krs pohjapiirrustukseen.
+            // 2. Viivat yläkoulun alueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "72%", top: "47.5%", width: "4px", height: "9%", backgroundColor: "red" },
             { left: "72%", top: "56%", width: "6.8%", height: "4px", backgroundColor: "red" },
@@ -69,7 +69,7 @@ function App() {
             { left: "28.4%", top: "35.5%", width: "20%", height: "10px", backgroundColor: "red" }
         ],
         [
-            // 4. Viivat vuoropäiväkodin alueelle, 1krs pohjapiirrustukseen.
+            // 4. Viivat vuoropäiväkodin alueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "72%", top: "47.5%", width: "4px", height: "9%", backgroundColor: "red" },
             { left: "42%", top: "56.5%", width: "30.5%", height: "4px", backgroundColor: "red" },
@@ -90,7 +90,7 @@ function App() {
             { left: "42.5%", top: "21%", width: "40%", height: "10px", backgroundColor: "red" }
         ],
         [
-            // 6. Viivat keittiön alueelle, 1krs pohjapiirrustukseen.
+            // 6. Viivat keittiön alueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "72%", top: "47.5%", width: "4px", height: "9%", backgroundColor: "red" },
             { left: "42%", top: "56.5%", width: "30.5%", height: "4px", backgroundColor: "red" },
@@ -107,7 +107,7 @@ function App() {
             { left: "50%", top: "74.5%", width: "20%", height: "10px", backgroundColor: "red" }
         ],
         [
-            // 8. Viivat kotitalouden alueelle, 1krs pohjapiirrustukseen.
+            // 8. Viivat kotitalouden alueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "72%", top: "47.5%", width: "4px", height: "9%", backgroundColor: "red" },
             { left: "42%", top: "56.5%", width: "30.5%", height: "4px", backgroundColor: "red" },
@@ -123,7 +123,7 @@ function App() {
             { left: "70%", top: "55%", width: "13%", height: "10px", backgroundColor: "red" }
         ],
         [
-            // 10. Viivat käsitöiden ja kuvataiteen alueelle, 1krs pohjapiirrustukseen.
+            // 10. Viivat käsitöiden ja kuvataiteen alueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "72%", top: "47.5%", width: "4px", height: "9%", backgroundColor: "red" },
             { left: "42%", top: "56.5%", width: "30.5%", height: "4px", backgroundColor: "red" },
@@ -142,7 +142,7 @@ function App() {
             { left: "68%", top: "46%", width: "10px", height: "24.5%", backgroundColor: "red" }
         ],
         [
-            // 12. Viivat musiikkiluokkien ja näyttämön alueelle, 1krs pohjapiirrustukseen.
+            // 12. Viivat musiikkiluokkien ja näyttämön alueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "68.5%", top: "43.2%", width: "1.5%", height: "3px", backgroundColor: "red" },
             { left: "41.7%", top: "45.5%", width: "28.3%", height: "4px", backgroundColor: "red" },
@@ -162,7 +162,7 @@ function App() {
             { left: "8.4%", top: "52.5%", width: "6.5%", height: "10px", backgroundColor: "red" }
         ],
         [
-            // 14. Viivat liikuntasalien alueelle, 1krs pohjapiirrustukseen.
+            // 14. Viivat liikuntasalien alueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "41.7%", top: "45.5%", width: "28.3%", height: "4px", backgroundColor: "red" },
             { left: "41.7%", top: "40%", width: "0.4%", height: "6%", backgroundColor: "red" },
@@ -179,7 +179,7 @@ function App() {
             { left: "11%", top: "53%", width: "5%", height: "10px", backgroundColor: "red" }
         ],
         [
-            // 16. Viivat pukuhuoneiden alueelle, 1krs pohjapiirrustukseen.
+            // 16. Viivat pukuhuoneiden alueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "42%", top: "45.5%", width: "28%", height: "4px", backgroundColor: "red" },
             { left: "41.6%", top: "40%", width: "4px", height: "5.9%", backgroundColor: "red" },
@@ -201,7 +201,7 @@ function App() {
             { right: "24.7%", top: "89%", width: "10px", height: "6%", backgroundColor: "red" }
         ],
         [
-            // 18. Viivat nuortenpalveluiden alueelle, 1krs pohjapiirrustukseen.
+            // 18. Viivat nuortenpalveluiden alueelle, 1krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "72%", top: "47.5%", width: "4px", height: "9%", backgroundColor: "red" },
             { left: "54.5%", top: "56.5%", width: "18%", height: "4px", backgroundColor: "red" },
@@ -237,7 +237,7 @@ function App() {
             { right: "22%", top: "17%", width: "10px", height: "18%", backgroundColor: "red" },
         ],
         [
-            // 22. Viivat lukion alueelle, 2krs pohjapiirrustukseen.
+            // 22. Viivat lukion alueelle, 2krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "69.2%", top: "49%", width: "4px", height: "8%", backgroundColor: "red" },
             { left: "55%", top: "49%", width: "4px", height: "8%", backgroundColor: "red" },
@@ -262,7 +262,7 @@ function App() {
             { left: "47.5%", top: "68.5%", width: "10%", height: "8px", backgroundColor: "red" }
         ],
         [
-            // 24. Viivat hallinnon alueelle, 2krs pohjapiirrustukseen.
+            // 24. Viivat hallinnon alueelle, 2krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "69.2%", top: "49%", width: "4px", height: "8%", backgroundColor: "red" },
             { left: "54.8%", top: "49%", width: "4px", height: "11%", backgroundColor: "red" },
@@ -290,7 +290,7 @@ function App() {
             { right: "6%", top: "72%", width: "4%", height: "8px", backgroundColor: "transparent" }
         ],
         [
-            // 26. Viivat päiväkodin alueelle, 2krs pohjapiirrustukseen.
+            // 26. Viivat päiväkodin alueelle, 2krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "54.8%", top: "49.5%", width: "4px", height: "9%", backgroundColor: "red" },
             { left: "69.3%", top: "49.5%", width: "4px", height: "9%", backgroundColor: "red" },
@@ -313,7 +313,7 @@ function App() {
             { right: "12.2%", top: "30%", width: "10px", height: "18%", backgroundColor: "red" },
         ],
         [
-            // 28. Viivat alakoulun, esi- ja alkuopetuksen alueelle, 2krs pohjapiirrustukseen.
+            // 28. Viivat alakoulun, esi- ja alkuopetuksen alueelle, 2krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "54.8%", top: "49.5%", width: "4px", height: "9%", backgroundColor: "red" },
             { left: "69.3%", top: "49.5%", width: "4px", height: "9%", backgroundColor: "red" },
@@ -341,7 +341,7 @@ function App() {
             { right: "13%", top: "0.7%", width: "5%", height: "10px", backgroundColor: "red" },
         ],
         [
-            // 30. Viivat luonnontieteiden alueelle, 2krs pohjapiirrustukseen.
+            // 30. Viivat luonnontieteiden alueelle, 2krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "54.8%", top: "49.5%", width: "4px", height: "9%", backgroundColor: "red" },
             { left: "69.3%", top: "49.5%", width: "4px", height: "9%", backgroundColor: "red" },
@@ -361,7 +361,7 @@ function App() {
             { right: "26%", top: "10%", width: "8%", height: "10px", backgroundColor: "red" },
         ],
         [
-            // 32. Viivat vahtimestarin alueelle, 2krs pohjapiirrustukseen.
+            // 32. Viivat vahtimestarin alueelle, 2krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "72.4%", top: "47.7%", width: "4px", height: "8%", backgroundColor: "red" },
             { left: "67.8%", top: "55.4%", width: "5.1%", height: "4px", backgroundColor: "red" },
@@ -375,7 +375,7 @@ function App() {
             { right: "68.3%", top: "86%", width: "10px", height: "9%", backgroundColor: "red" },
         ],
         [
-            // 34. Viivat digiklinikan alueelle, 2krs pohjapiirrustukseen.
+            // 34. Viivat digiklinikan alueelle, 2krs pohjapiirustukseen.
             // Vaihtamalla backgroundColorin arvoa voit nähdä mikä viiva on missä.
             { left: "72.4%", top: "47.7%", width: "4px", height: "4%", backgroundColor: "red" },
             { left: "72.4%", top: "51.3%", width: "3.5%", height: "4px", backgroundColor: "red" },
@@ -399,11 +399,15 @@ function App() {
 
             {/* className Napit sisältää sivulla nähtävissä olevat napit, jotka avaavat modalin joka sisältää kyseisen alueen kuvat.
                 Lisäksi jokainen nappi sisältää style={{}} tyylit johon on annettu margin, backgroundColor ja borderColor. variant tulee bootstrapilta, tekee napeista "päänapin".
-                Napin sisällä on div joka sisältää Headerin ja kaksi ImageWithLines modulia joista ylempi on pohjapiirrustus ja alempi on zoomattu kuva.
+                Napin sisällä on div joka sisältää Headerin ja kaksi ImageWithLines modulia joista ylempi on pohjapiirustus ja alempi on zoomattu kuva.
                 Lisäksi näillä kaikilla on järjestyksessä lines={lineArray[ ]}, jotka hakevat viivat kuvan päälle.
                 Nämä siis samassa järjestyksessä 0 eteenpäin kuin ylempänä lineArrayssä annettu.*/}
             <div className="Napit">
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Etelä-Karjalan Hyvinvointialue</h1>
@@ -421,7 +425,11 @@ function App() {
                     )}>
                     1. Etelä-Karjalan Hyvinvointialue
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Yläkoulu</h1>
@@ -439,7 +447,11 @@ function App() {
                     )}>
                     2. Yläkoulu
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Vuoropäiväkoti</h1>
@@ -457,7 +469,11 @@ function App() {
                     )}>
                     3. Vuoropäiväkoti
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Keittiö</h1>
@@ -475,7 +491,11 @@ function App() {
                     )}>
                     4. Keittiö
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Kotitalous</h1>
@@ -493,7 +513,11 @@ function App() {
                     )}>
                     5. Kotitalous
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Käsityöt ja kuvataide</h1>
@@ -511,7 +535,11 @@ function App() {
                     )}>
                     6. Käsityöt ja kuvataide
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Musiikki luokat ja näyttämö</h1>
@@ -529,7 +557,11 @@ function App() {
                     )}>
                     7. Musiikki luokat ja näyttämö
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Liikuntasalit</h1>
@@ -547,7 +579,11 @@ function App() {
                     )}>
                     8. Liikuntasalit
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Pukuhuoneet</h1>
@@ -565,7 +601,11 @@ function App() {
                     )}>
                     9. Pukuhuoneet
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Nuortenpalvelut</h1>
@@ -584,7 +624,11 @@ function App() {
                     10. Nuortenpalvelut
                 </BootstrapButton>
                 <br></br>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Joustava Perusopetus</h1>
@@ -602,7 +646,11 @@ function App() {
                     )}>
                     11. Joustava Perusopetus
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Lukio</h1>
@@ -620,7 +668,11 @@ function App() {
                     )}>
                     12. Lukio
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div style={{ textAlign: "center" }}>
                             <h1 className="modalHeader">Hallinto ja opettajanhuone</h1>
@@ -638,7 +690,11 @@ function App() {
                     )}>
                     13. Hallinto ja opettajanhuone
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Päiväkoti</h1>
@@ -656,7 +712,11 @@ function App() {
                     )}>
                     14. Päiväkoti
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }}
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }}
+
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Alakoulu, Esi- ja Alkuopetus</h1>
@@ -674,7 +734,11 @@ function App() {
                     )}>
                     15. Alakoulu, Esi- ja Alkuopetus
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Luonnontieteet</h1>
@@ -692,7 +756,11 @@ function App() {
                     )}>
                     16. Luonnontieteet
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Vahtimestari</h1>
@@ -721,7 +789,11 @@ function App() {
                     </img>
                     Vahtimestari
                 </BootstrapButton>
-                <BootstrapButton style={{ margin: "2px", backgroundColor: "rgb(237, 108, 65)", borderColor: "transparent" }} variant="primary"
+                <BootstrapButton style={{ 
+                    margin: "2px", 
+                    backgroundColor: "rgb(237, 108, 65)", 
+                    borderColor: "transparent" }} 
+                    variant="primary"
                     onClick={() => handleButtonClick(
                         <div>
                             <h1 className="modalHeader">Digiklinikka</h1>
@@ -752,12 +824,12 @@ function App() {
                 </BootstrapButton>
             </div>
 
-            {/* Tämä hoitaa modalin sulkemisen kun painat nappia Sulje. */}
-            <Modaali isOpen={isOpen} onClose={handleClose}>
+            {/* Tämä on modali ylhäällä olevat napit ovat modalContent*/}
+            <Modali isOpen={isOpen} onClose={handleClose}>
                 {modalContent}
-            </Modaali>
+            </Modali>
 
-            {/* Tämä div tuo pohjapiirrustukset nappien alle näkyviin. */}
+            {/* Tämä div tuo pohjapiirustukset nappien alle näkyviin. */}
             <div className="Pohjat">
                 <EkakrsPohja />
                 <TokakrsPohja />
